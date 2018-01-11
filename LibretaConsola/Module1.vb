@@ -19,8 +19,18 @@
         Nombres(9) = "Victor"
 
         'Mostrar un elemento
-        Console.WriteLine(Nombres(5)) 'María
-        Console.WriteLine(Telefonos(0)) '958933345
+        'Console.WriteLine(Nombres(5)) 'María
+        'Console.WriteLine(Telefonos(0)) '958933345
+
+        'Bucles
+        'Mostrar todos los nombres
+        Dim i As Integer = 0 'contador
+
+        Console.WriteLine("Do While")
+        Do While i < Nombres.Length
+            Console.WriteLine(Nombres(i))
+            i = i + 1
+        Loop
 
         Console.ReadLine()
 

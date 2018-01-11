@@ -26,8 +26,19 @@
         'Mostrar todos los nombres
         Dim i As Integer = 0 'contador
 
+        Console.ForegroundColor = ConsoleColor.Yellow
         Console.WriteLine("Do While")
+        Console.ForegroundColor = ConsoleColor.Gray
         Do While i < Nombres.Length
+            Console.WriteLine(Nombres(i))
+            i = i + 1
+        Loop
+
+        Console.ForegroundColor = ConsoleColor.Yellow
+        Console.WriteLine("Do Until")
+        Console.ForegroundColor = ConsoleColor.Gray
+        i = 0
+        Do Until i = Nombres.Length
             Console.WriteLine(Nombres(i))
             i = i + 1
         Loop

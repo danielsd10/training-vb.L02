@@ -61,6 +61,15 @@
             i = i + 1
         Loop Until i = Nombres.Length
 
+        Console.ForegroundColor = ConsoleColor.Yellow
+        Console.WriteLine("Do .. Loop While")
+        Console.ForegroundColor = ConsoleColor.Gray
+        i = 0
+        Do
+            Console.WriteLine(Nombres(i))
+            i = i + 1
+        Loop While i < Nombres.Length
+
         Console.ReadLine()
 
     End Sub

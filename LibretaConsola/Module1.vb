@@ -43,6 +43,15 @@
             i = i + 1
         Loop
 
+        Console.ForegroundColor = ConsoleColor.Yellow
+        Console.WriteLine("While")
+        Console.ForegroundColor = ConsoleColor.Gray
+        i = 0
+        While i < Nombres.Length
+            Console.WriteLine(Nombres(i))
+            i = i + 1
+        End While
+
         Console.ReadLine()
 
     End Sub

@@ -77,6 +77,13 @@
             Console.WriteLine(Nombres(i))
         Next
 
+        Console.ForegroundColor = ConsoleColor.Yellow
+        Console.WriteLine("For Each")
+        Console.ForegroundColor = ConsoleColor.Gray
+        For Each Nombre As String In Nombres
+            Console.WriteLine(Nombre)
+        Next
+
         Console.ReadLine()
 
     End Sub

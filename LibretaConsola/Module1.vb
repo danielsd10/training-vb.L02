@@ -70,6 +70,13 @@
             i = i + 1
         Loop While i < Nombres.Length
 
+        Console.ForegroundColor = ConsoleColor.Yellow
+        Console.WriteLine("For")
+        Console.ForegroundColor = ConsoleColor.Gray
+        For i = 0 To Nombres.Length - 1
+            Console.WriteLine(Nombres(i))
+        Next
+
         Console.ReadLine()
 
     End Sub

@@ -87,6 +87,33 @@
             Console.WriteLine(Nombre)
         Next
 
+        '--------
+        'Matrices
+        '--------
+
+        Console.ForegroundColor = ConsoleColor.Cyan
+        Console.WriteLine("Matrices")
+
+        Dim Contactos(3, 1) As String
+        Dim x As Integer
+
+        'Solicitar 10 nombres y apellidos y colocarlos en la matriz
+        For x = 0 To Contactos.GetLongLength(0) - 1
+            Console.ForegroundColor = ConsoleColor.Cyan
+            Console.WriteLine("Contacto #{0}", x + 1)
+            Console.ForegroundColor = ConsoleColor.Gray
+            Console.Write("Ingrese el nombre  : ")
+            Contactos(x, 0) = Console.ReadLine()
+            Console.Write("Ingrese el apellido: ")
+            Contactos(x, 1) = Console.ReadLine()
+        Next
+
+        'Mostrar los 10 contactos de la forma: Contacto #: Apellido, Nombre
+        Console.ForegroundColor = ConsoleColor.White
+        For x = 0 To Contactos.GetLongLength(0) - 1
+            Console.WriteLine("Contacto #{0}: {1}, {2}", x + 1, Contactos(x, 1), Contactos(x, 0))
+        Next
+
         Console.ReadLine()
 
     End Sub

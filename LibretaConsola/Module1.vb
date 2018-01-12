@@ -31,6 +31,9 @@
         Console.ForegroundColor = ConsoleColor.Gray
         Do While i < Nombres.Length
             Console.WriteLine(Nombres(i))
+            If i = 6 Then 'salir despues de mostrar el elemento con índice 6
+                Exit Do
+            End If
             i = i + 1
         Loop
 
@@ -73,7 +76,7 @@
         Console.ForegroundColor = ConsoleColor.Yellow
         Console.WriteLine("For")
         Console.ForegroundColor = ConsoleColor.Gray
-        For i = 0 To Nombres.Length - 1
+        For i = 0 To Nombres.Length - 1 Step 2 ' sólo elementos impares
             Console.WriteLine(Nombres(i))
         Next
 
